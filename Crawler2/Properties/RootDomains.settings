@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Crawler2.Properties" GeneratedClassName="RootDomains">
+  <Profiles />
+  <Settings>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://newbalance.com</Value>
+    </Setting>
+    <Setting Name="Setting1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.newbalance.com</Value>
+    </Setting>
+    <Setting Name="Setting2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://newbalance.com</Value>
+    </Setting>
+    <Setting Name="Setting3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.newbalance.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

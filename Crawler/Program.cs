@@ -69,7 +69,7 @@ namespace Crawler
                 {
                     string link = node.Attributes["href"].Value;
                     //make sure we haven't already found this link.
-                    if (CheckForHttpUri(link))
+                    if (CheckForHttpOrHttpsUri(link))
                     {
                         if (!uniqueLinks.Contains(link))
                         {
@@ -123,8 +123,6 @@ namespace Crawler
                     return "Uknown Status";
                 }
             }
-            
-            
         }
 
         private static string StringToCSVCell(string str)
@@ -160,11 +158,8 @@ namespace Crawler
             csvLinesToBeWritten.Add(line);
         }
 
-        private static bool CheckForHttpUri(string url)
+        private static bool CheckForHttpOrHttpsUri(string url)
         {
-            //if(url.Length >= 4 && url.Substring(0, 4).ToLower() == "http")
-            //    return true;
-            //return false;
             //https://stackoverflow.com/questions/7578857/how-to-check-whether-a-string-is-a-valid-http-url
             Uri uriResult;
             return Uri.TryCreate(url, UriKind.Absolute, out uriResult) && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);

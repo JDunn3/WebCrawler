@@ -34,17 +34,5 @@ namespace Crawler2.Properties {
                 this["startUrl"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("newbalance.com")]
-        public string rootUrlContainsMatch {
-            get {
-                return ((string)(this["rootUrlContainsMatch"]));
-            }
-            set {
-                this["rootUrlContainsMatch"] = value;
-            }
-        }
     }
 }
